@@ -1,5 +1,5 @@
 {
-  "name": "pkg2",
+  "name": "pkg1",
   "version": "1.0.0",
   "description": "",
   "main": "./index.ts",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "pkg1": "workspace:pkg1@*"
+    "shared": "workspace:shared@*"
   },
   "keywords": [],
   "author": "",

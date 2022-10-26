@@ -20,14 +20,14 @@ importers:
       ts-jest: 29.0.3_fxe5mizohawh6cjruma5lyyrna
       typescript: 4.8.4
 
-  packages/pkg1:
-    specifiers: {}
-
-  packages/pkg2:
+  packages/reactivity:
     specifiers:
-      pkg1: workspace:pkg1@*
+      shared: workspace:shared@*
     dependencies:
-      pkg1: link:../pkg1
+      shared: link:../shared
+
+  packages/shared:
+    specifiers: {}
 
 packages:
 
